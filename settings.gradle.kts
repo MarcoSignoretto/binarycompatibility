@@ -18,6 +18,4 @@ rootProject.name = "BinaryCompatibility"
 include(":app")
 include(":moduleA")
 include(":moduleB")
-include(":moduleABinary")
-include(":moduleBBinary")
 include(":lib")
