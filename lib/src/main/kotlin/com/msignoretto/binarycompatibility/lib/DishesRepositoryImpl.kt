@@ -18,4 +18,9 @@ internal class DishesRepositoryImpl : DishesRepository {
     override fun getDishes(specification: DishSpecification): List<Dish> {
         return dishes
     }
+    
+
+    override fun getDishes(): List<Dish> {
+        return getDishes(DishSpecifications.all())
+    }
 }
