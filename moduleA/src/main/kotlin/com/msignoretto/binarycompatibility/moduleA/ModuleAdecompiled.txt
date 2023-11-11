@@ -1,0 +1,17 @@
+public final class ModuleA {
+   public final void run() {
+      DishesRepository dishesRepository = DishRepositoryFactory.INSTANCE.create();
+      Iterable $this$forEach$iv = (Iterable)DefaultImpls.getDishes$default(dishesRepository, (DishSpecification)null, 1, (Object)null);
+      int $i$f$forEach = false;
+      Iterator var4 = $this$forEach$iv.iterator();
+
+      while(var4.hasNext()) {
+         Object element$iv = var4.next();
+         Dish it = (Dish)element$iv;
+         int var7 = false;
+         String var8 = it.getName() + " - " + it.getDescription() + " - " + it.getPrice();
+         System.out.println(var8);
+      }
+
+   }
+}
